@@ -14,7 +14,7 @@ void print_Str(const char * str, int width, int precision, char flags)
 {
 	int count = 0;
 	int i;
-	
+
 	while (str[count] != '\0')
 	{
 		count++;
@@ -50,7 +50,7 @@ void print_Str(const char * str, int width, int precision, char flags)
 	{
 		if (str[i] >= 32 && str[i] < 127)
 		{
-			_putchar(str[i);
+			_putchar(str[i]);
 		}
 		else
 		{
@@ -106,7 +106,7 @@ void print_Ptr(void *ptr)
  *
  * Return: void
  */
-void print_Rev(const char ^str)
+void print_Rev(const char *str)
 {
 	int count = _strlen(str);
 	int i;

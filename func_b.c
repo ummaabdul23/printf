@@ -18,7 +18,7 @@ void print_Unsig(unsigned int num)
 	} while (num);
 
 	while (i > 0) {
-		_putchat(buffer[--i]);
+		_putchar(buffer[--i]);
 	}
 }
 
@@ -163,7 +163,7 @@ void print_Bin(unsigned int num, int width, char flags)
  */
 int _strlen(const char *s)
 {
-	int (counter = 0);
+	int counter = 0;
 
 	while (*s != '\0')
 	{
