@@ -10,7 +10,7 @@
  *
  * Return: void
  */
-void print_Str(const char * str, int width, int precision, char flags)
+int print_Str(const char * str, int width, int precision, char flags)
 {
 	int count = 0;
 	int i;
@@ -69,6 +69,7 @@ void print_Str(const char * str, int width, int precision, char flags)
 			_putchar(' ');
 		}
 	}
+	return (count);
 }
 
 /**

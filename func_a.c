@@ -3,9 +3,10 @@
   * print_Char - print characters
   * @c: --
   */
-void print_Char(char c)
+int print_Char(char c)
 {
 	  _putchar(c);
+	  return 1;
 }
 /**
   * print_str - print strings
@@ -15,7 +16,7 @@ void print_Char(char c)
   * @flags: --
   * Return: void
   */
-void print_str(const char *str, int width, int precision, char flags)
+int print_str(const char *str, int width, int precision, char flags)
 {
 	int i;
 	int count = 0;
@@ -54,6 +55,7 @@ void print_str(const char *str, int width, int precision, char flags)
 			_putchar(' ');
 		}
 	}
+	return (count);
 }
 /**
   * print_Dec - print decimals and integers

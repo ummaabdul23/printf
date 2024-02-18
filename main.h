@@ -23,14 +23,14 @@ typedef struct format
 
 int _putchar(char c);
 void print_mod(void);
-void print_Char(char c);
-void print_str(const char *str, int width, int precision, char flags);
+int print_Char(char c);
+int print_str(const char *str, int width, int precision, char flags);
 void print_Dec(int num);
 void print_Bin(unsigned int num, int width, char flags);
 void print_Hex(unsigned int num, int upper, int width, char flags);
 void print_Oct(unsigned int num);
 void print_Unsig(unsigned int num);
-void print_Str(const char *str, int width, int precision, char flags);
+int print_Str(const char *str, int width, int precision, char flags);
 void print_Ptr(void *ptr);
 void print_Rev(const char *str);
 void print_Rot13(const char *str);

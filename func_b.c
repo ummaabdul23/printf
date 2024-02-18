@@ -10,7 +10,7 @@
 void print_Unsig(unsigned int num)
 {
 	char buffer[20];
-	int i;
+	int i = 0;
 
 	do {
 		buffer[i++] = (num % 10) + '0';
@@ -25,14 +25,14 @@ void print_Unsig(unsigned int num)
 /**
  * print_Oct - prints an octal integer from a string
  *
- * @num: unsigned int 
+ * @num: unsigned int
  *
  * Return: void
  */
 void print_Oct(unsigned int num)
 {
 	char buffer[20];
-	int i;
+	int i = 0;
 
 	do {
 		buffer[i++] = (num % 8) + '0';
@@ -164,6 +164,10 @@ void print_Bin(unsigned int num, int width, char flags)
 int _strlen(const char *s)
 {
 	int counter = 0;
+	if (s == NULL)
+	{
+		return (0);
+	}
 
 	while (*s != '\0')
 	{
